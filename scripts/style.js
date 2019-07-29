@@ -1,4 +1,3 @@
-
 // Menu Open & Close
 var menu = document.querySelector("#menu");
 var menuOverlay = document.getElementById("menu-overlay");
@@ -34,4 +33,6 @@ function closeMenu(){
 function escapeMenu(keyString){
   if(keyString === "Escape" && menuOpen === true) closeMenu();
 }
+
+// 
 
