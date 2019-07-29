@@ -1,0 +1,16 @@
+body{
+    overflow-y: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        margin-bottom: 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 901px){
+    body{
+        margin-bottom: 0px;
+    }
+  }

@@ -1,0 +1,21 @@
+<script>
+var links = {};
+links.main = {
+    holotech: "https://lehuyh.github.io/Holotech/",
+    cloudi: "https://lehuyh.github.io/Cloudi/", 
+    notifizer: "https://notifizer.ml",
+    escape: "https://escapeoblivion.mrcool4000.repl.run/",
+    coinages: "https://coinages.netlify.com/start/",
+    influxion: "https://mrcool4000.github.io/influxion-rhythm-game/"
+}
+links.github = {
+    holotech: "https://github.com/LehuyH/Holotech",
+    cloudi: "https://github.com/LehuyH/Cloudi",
+    escape: "https://github.com/mrcool4000/escape-oblivion",
+    acecodeday19: "https://github.com/mrcool4000/ace-code-day-2019",
+    coinages: "https://github.com/LehuyH/CoinAGES",
+    influxion: "https://github.com/mrcool4000/influxion-rhythm-game"
+}
+var search = decodeURI(window.location.search).trim().replace("?", "").split("&");
+location.href = links[search[0]][search[1]];
+</script>

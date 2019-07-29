@@ -1,0 +1,138 @@
+/* CSS Imports */
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Barlow:200|IBM+Plex+Mono');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+/* Style */
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #1C1F33;
+  outline: none;
+  font-family: 'Barlow', sans-serif;
+}
+
+body, html{
+  background: transparent none;
+  background-size: 100vw 100vh;
+}
+
+#background{
+  border: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+}
+
+body{
+  animation: fade-in 1.5s;
+  min-height: 100%;
+  height: 100%;
+}
+
+#frame-body{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+}
+
+hr{
+  margin: 10px;
+  height: 0;
+  border: none;
+  border-bottom: #003366 2px solid;
+}
+
+.menu-icons::after, .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Animations */
+@keyframes fade-in{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+@keyframes fade-out{
+  from{ opacity: 1; }
+  to{ opacity: 0; }
+}
+
+@keyframes slide-in-left{
+  from{ transform: translateX(-100%); }
+  to{ transform: translateX(0); }
+}
+
+@keyframes slide-in-right{
+  from{ transform: translateX(100%); }
+  to{ transform: translateX(0); }
+}
+
+@keyframes slide-out-right{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(100%); }
+}
+
+@keyframes slide-out-right-fade{
+  from{ transform: translateX(0); opacity: 1; }
+  to{ transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes slide-in-right-fade{
+  from{ transform: translateX(100%); opacity: 0; }
+  to{ transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-out-left{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-100%); }
+}
+
+.particles-js-canvas-el{
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+/* Navigation */
+#navigation{
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 65px);
+  border: none;
+  background: transparent none;
+}
+
+/* Pages Shared Styles */
+
+.small-header .title{
+  background: white;
+  color: #1C1F33;
+  display: inline-block;
+  font-size: 22.5px;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.small-header{
+  position: relative;
+  left: -2.5px;
+  text-align: center;
+  padding: 10px;
+  background: white;
+  border: 2.5px #003366 solid;
+  width: 125px;
+  border-bottom-right-radius: 20px;
+}
+.pg-canvas{
+  position:absolute !important;
+}

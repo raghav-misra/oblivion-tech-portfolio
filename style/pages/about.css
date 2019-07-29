@@ -1,0 +1,83 @@
+@import url("shared.css");
+
+.aboutdiv{
+    position: absolute;
+    top: calc(52vh - 234.19px);
+    text-align: center;
+
+}
+.html-hide, .c-hide, .robot-hide{
+    color: white;
+}
+
+.html-show{
+    color:white;
+    display: none;
+}
+@media only screen and (max-width: 690px){
+    .html-hide{
+        display: none;
+    }
+    .html-show{
+        display: block;
+    }
+}
+@media only screen and (max-width: 690px){
+    .c-hide{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    .robot-hide, .initial-hide{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 460px){
+    .badge{
+        font-size: 12px;
+    }
+}
+
+.aboutcard{
+    display: inline-block;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Barlow;
+    color: black;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.aboutcard:hover{
+    box-shadow: 0 14px 50px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.badge{
+    border-radius: 50px;
+    display: block;
+    color:white;
+    padding: 7.5px;
+    margin: 10px;
+}
+.aboutcard img{
+    width: 70%;
+}
+.aboutdiv{
+    display: inline-block;
+    text-align: center;
+    color:white;
+    font-family: Barlow;
+  
+}
+
+img#ewgey{
+    width: 40%;
+    padding: 30px;
+    padding-top: 30px;
+}

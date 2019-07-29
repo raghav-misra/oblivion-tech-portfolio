@@ -1,0 +1,103 @@
+@import url("shared.css");
+
+#frame-body{
+    text-align: center;
+}
+
+.project-card{
+    position: relative;
+    background: white;
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+    height: 175px;
+    text-align: center;
+    box-shadow: 0 0 25px #1C1F33;
+    overflow: hidden;
+}
+
+.project-title{
+    font-size: 17.5px;
+    display: block;
+    text-align: center;
+    transition: transform 750ms ease-in-out, color 750ms ease-in-out;
+    color: #1C1F33;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.project-card .desc{
+    color: #1C1F33;
+    text-align: left;
+    font-size: 15px;
+}
+
+.project-card .cover-up .ttl-big{
+    font-size: 22.5px;
+    color: #1C1F33;
+    font-family: 'Staatliches', sans-serif;
+    background: white;
+    width: 100%;
+    word-wrap: none;
+    overflow: hidden;
+    top: calc(50% - 21.25px);
+    padding: 10px 0;
+    position: absolute;
+}
+
+.project-card .cover-up{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1C1F33;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    z-index: 666;
+    filter: none;
+    transition: width 750ms ease-in-out;
+}
+
+.project-card .cover-up.hovered{
+    width: 0;
+}
+
+.project-card .visit.git i{
+    color: inherit;
+}
+
+.project-card .visit{
+    font-family: 'Staatliches', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 10px;
+    margin-top: 15px;
+    background: white;
+    color: #1C1F33;
+    border: #003366 2.5px solid;
+    font-size: 15px;
+    transition: background 750ms ease-in-out, color 750ms ease-in-out, box-shadow 750ms ease-in-out;
+}
+
+.project-card .visit:hover{
+    color: white;
+    background: #003366;
+    box-shadow: 0 0 15px #1C1F33; 
+}
+
+.project-card .cover-up .langs{
+    border-top-left-radius: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 17.5px;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+.tprnt{opacity: 0;}

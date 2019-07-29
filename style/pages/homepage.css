@@ -1,0 +1,83 @@
+@import url("shared.css");
+
+.title{
+    font-size: 1000%;
+    text-align: center;
+    position: absolute;
+    height: 1em;
+    width: 100%;
+    top: calc(50vh - 1.25em);
+    color: white;
+    font-family: 'Staatliches', sans-serif;
+    display: block;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+    text-shadow: 2px 2px white;
+}
+
+.typed-cursor{
+  display: none;
+}
+
+#hide-typed{
+  display: none;
+}
+
+@media only screen and (max-width: 520px){
+  .title{
+    font-size: 750%;
+  }
+  #hide-typed{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .title{
+    font-size: 500%;
+  }
+  #hide-typed{
+    display: block;
+  }
+}
+
+#subttl *{
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#subttl{
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    position: absolute;
+    top: 50vh;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 225%;
+}
+
+@keyframes fade-zoom-in{
+    0%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: none;
+    }
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      color: #19dcea;
+    }
+    100% {
+      color: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      color: #19dcea;
+    }
+    100% {
+      color: #b22cff;
+    }
+  }
