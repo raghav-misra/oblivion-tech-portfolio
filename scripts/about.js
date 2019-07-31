@@ -1,13 +1,13 @@
 var menuFadeIn = {
     opacity: '1',
-    right: '0px',
-    bottom: '0px'
+    bottom: '0px',
+    transform: 'scale(1)'
 };
 
 var menufadeOut = {
     opacity: '0',
-    right: '-100vw',
-    bottom: '100vh'
+    bottom: '100vh',
+    transform: 'scale(0)'
 };
 
 
@@ -15,6 +15,23 @@ keyframer.createCSSTransitionOn(
     "click", "#more-info", "all 1s ease-in-out", menuFadeIn, "#lehuy-card"
 );
 
-keyframer.createCSSTransitionOn(
-    "mousedown", "#more-info", "all 1s ease-in-out", menuFadeIn, "#raghav-card"
-);
+document.querySelector("#raghav-card").onclick = ()=>{
+    keyframer.createCSSTransition(
+        "#more-info", "all 1s ease-in-out", menuFadeIn
+    );
+}
+
+document.querySelector("#more-info").onclick = (ev)=>{
+    keyframer.createCSSTransition(
+        "#more-info", "all 1s ease-in-out", menufadeOut
+    );
+    ev.preventDefault();
+    ev.stopPropagation();
+    return false;
+}
+
+document.querySelector(".bio").onclick = (ev)=>{
+    ev.preventDefault();
+    ev.stopPropagation();
+    return false;
+}

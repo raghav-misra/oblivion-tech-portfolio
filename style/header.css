@@ -165,6 +165,8 @@ header{
   background: white;
   bottom: 0;
   z-index: 675;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .tab-icon-mobile{

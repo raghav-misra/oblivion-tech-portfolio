@@ -79,11 +79,15 @@
     transform: scale(1.05) skew(-2deg);
 }
 .badge{
+    font-family: 'IBM Plex Mono', sans-serif;
     border-radius: 50px;
     display: block;
     color:white;
     padding: 7.5px;
     margin: 10px;
+}
+.badge *{
+    font-family: 'IBM Plex Mono', sans-serif;
 }
 .aboutcard img{
     width: 70%;
@@ -109,7 +113,7 @@ img#ewgey{
 #more-info{
     position: fixed;
     bottom: 100vh; 
-    right: 100vw; 
+    transform: scale(0);
     opacity: 0; 
     width: 100%;
     height: 100vh; 
@@ -126,4 +130,21 @@ img#ewgey{
     border-radius: 25px;
     text-align: center;
     padding: 25px;
+    pointer-events: none;
+}
+
+#more-info .bio.lehuy p::after{
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit sollicitudin lobortis. Etiam rutrum ipsum at velit lacinia, eu hendrerit tortor venenatis. Morbi justo neque, rhoncus lacinia lacus eu, porttitor elementum turpis. Suspendisse potenti. Etiam luctus, ex ut porta cursus, odio ligula ornare lacus, nec pharetra tellus mi a nibh. Aliquam malesuada leo tristique lorem sodales, quis sagittis nunc posuere. Nullam eu diam a urna aliquam egestas vitae in sem. Duis sit amet venenatis arcu, quis faucibus nunc. Duis a lacinia eros. Duis vehicula leo sed sapien suscipit condimentum.'
+}
+
+#more-info .bio.raghav p::after{
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate nibh nec ipsum auctor euismod. Nullam enim ex, hendrerit sed iaculis at, dignissim at neque. Pellentesque ut quam varius quam mollis molestie eu sit amet mi. Fusce nulla ex, ultrices vel sem et, semper tincidunt risus. Aenean vehicula pellentesque nulla, ac dictum mi laoreet id. Phasellus ac ipsum nisi. Duis lorem enim, suscipit nec tortor a, efficitur vehicula massa. Vestibulum sed porta nulla. Duis sed porta purus, nec pharetra ex. Donec nec sollicitudin sapien, nec laoreet justo.'
+}
+
+#more-info .bio *{
+    pointer-events: none;
+}
+
+.bio h1{
+    font-family: 'IBM Plex Mono', sans-serif;
 }
