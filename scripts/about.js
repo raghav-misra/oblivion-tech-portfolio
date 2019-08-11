@@ -21,17 +21,4 @@ document.querySelector("#raghav-card").onclick = ()=>{
     );
 }
 
-document.querySelector("#more-info").onclick = (ev)=>{
-    keyframer.createCSSTransition(
-        "#more-info", "all 1s ease-in-out", menufadeOut
-    );
-    ev.preventDefault();
-    ev.stopPropagation();
-    return false;
-}
 
-document.querySelector(".bio").onclick = (ev)=>{
-    ev.preventDefault();
-    ev.stopPropagation();
-    return false;
-}
