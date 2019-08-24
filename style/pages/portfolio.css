@@ -36,6 +36,7 @@
     font-size: 22.5px;
     font-weight: 400;
     color: #1C1F33;
+    word-break: keep-all;
     font-family: 'Staatliches', sans-serif;
     background: rgba(255, 255, 255, 0.75);
     width: 100%;
@@ -59,11 +60,12 @@
     height: 100%;
     z-index: 666;
     filter: none;
-    transition: width 750ms ease-in-out;
+    transition: left 1000ms ease-in-out, transform 1000ms ease-in-out;
 }
 
 .project-card .cover-up.hovered{
-    width: 0;
+    left: -100%;
+    transform: scaleX(0)
 }
 
 .project-card .visit.git i{
@@ -96,6 +98,7 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 17.5px;
     padding: 10px;
+    word-break: keep-all;
     display: inline-block;
     position: absolute;
     bottom: 0;
