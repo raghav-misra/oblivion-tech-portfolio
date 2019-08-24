@@ -10,3 +10,7 @@ coverArr.forEach(function(el){
     el.getElementsByClassName("cover-up")[0].classList.remove("hovered");
   }
 });
+
+// 'Dynamic Project Card Builder
+
+

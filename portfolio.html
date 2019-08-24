@@ -12,147 +12,162 @@
     <div class="small-header">
         <span class="title">Our Projects</span>
     </div>
-    <!-- Holotech -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/holotech.jpg);
-        background-size: cover" class="cover-up">
-        <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
-            <h3 class="ttl-big">
-                Holotech<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Concept
-            </h3>
-        </div>
-        <span class="project-title">HoloTech - Conceptual Design</span>
-        <hr>
-        <p class='desc'>
-            Oblivion HoloTech is the concept of a scalable hologram projector, 
-            with an OS and rendering engine. 
-            The website was built in September 2018 and won 1st place 
-            in a competition.                
-        </p>
-        <a target="_blank" href="projects/?main&holotech" class="visit">View Project</a>
-        <a class="visit git" href="projects/?github&holotech" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
-    </div>
-    <!-- Cloudi -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/cloudi.jpg);
-        background-size: cover" class="cover-up">
-        <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
-            <h3 class="ttl-big">Cloudi<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Concept</h3>
-        </div>
-        <span class="project-title">Cloudi - Conceptual Design</span>
-        <hr>
-        <p class='desc'>
-            Cloudi is a scalable, multi-platform service that allows you to 
-            create and access a private computer system from anywhere.
-            This website, like HoloTech, was a concept design.
-        </p>
-        <a target="_blank" href="projects/?main&cloudi" class="visit">View Project</a>
-        <a class="visit git" href="projects/?github&cloudi" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
-    </div>
-    <!-- Notifizer -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/notifizer.png);
-        background-size: cover" class="cover-up">
-            <h3 class="ttl-big">Notifizer<i class="tprnt">|</i><i class="tprnt">|</i>|<i class="tprnt">|</i><i class="tprnt">|</i>Bot</h3>
-            <span class="langs">php,<i class="tprnt">|</i>HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
-        </div>
-        <span class="project-title">Notifizer - Discord Bot</span>
-        <hr>
-        <p class='desc'>
-            Notifizer is a bot created for the social platform Discord.
-            It allows users to create reminders for themselves and get
-            notified through the Discord app.</p>
-        <a target="_blank" href="projects/?main&notifizer" class="visit">View Project</a>
-    </div>
-    <!-- Escape Oblivion -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/escape-oblivion.png);
-        background-size: cover" class="cover-up">
-            <span class="langs">Python3</span>
-            <h3 class="ttl-big">Escape<i style="opacity: 0;">|</i>Oblivion<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
-        </div>
-        <span class="project-title">Escape Oblivion - Text Game</span>
-        <hr>
-        <p class='desc'>
-            Escape Oblivion is a short text-adventure game written in 
-            Python3.x. The game won first place in a Python competition.
-            The theme of the game is about escaping a 'haunted house'.
-        </p>
-        <a target="_blank" href="projects/?main&escape" class="visit">View Project</a>
-        <a class="visit git" href="projects/?github&escape" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
-    </div>
-    <!-- Ace Code Day 2019 -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/ace-coding-2019.png);
-        background-size: cover" class="cover-up">
-            <span class="langs">C#,<i class="tprnt">|</i>HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS,<i class="tprnt">|</i>PHP</span>
-            <h3 class="ttl-big">ACE<i style="opacity: 0;">|</i>CODE<i style="opacity: 0;">|</i>DAY<i style="opacity: 0;">|</i>2019<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
-        </div>
-        <span class="project-title">Ace Code Day 2019 - Quiz Game</span>
-        <hr>
-        <p class='desc'>
-            This is an game we built for a competition called 
-            Ace Code Day which teaches people how they impact 
-            the environment and how they can reduce their carbon
-            footprint.
-        </p>
-        <a class="visit git" href="projects/?github&acecodeday19" target="_blank"> View Project On Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
-    </div>
-    <!-- CoinAGES -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/coinages.png);
-        background-size: cover" class="cover-up">
+    <div id="project-container">
+        <!-- Holotech -->
+        <div class="project-card">
+            <div style="background-image: url(assets/holotech.jpg);" class="cover-up">
             <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
-            <h3 class="ttl-big">CoinAGES<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+                <h3 class="ttl-big">
+                    Holotech<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Concept
+                </h3>
+            </div>
+            <span class="project-title">HoloTech - Conceptual Design</span>
+            <hr>
+            <p class='desc'>
+                Oblivion HoloTech is the concept of a scalable hologram projector, 
+                with an OS and rendering engine. 
+                The website was built in September 2018 and won 1st place 
+                in a competition.                
+            </p>
+            <a target="_blank" href="projects/?main&holotech" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&holotech" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
         </div>
-        <span class="project-title">COINAGES - Repl.it Game Jam</span>
-        <hr>
-        <p class='desc'>
-                CoinAGES is an online game we built for a global contest, the Repl.It Game Jam. 
-                The game concept is a cynical view on launching and 
-                growing a startup in the tech industry.
-        </p>
-        <a target="_blank" href="projects/?main&coinages" class="visit">View Project</a>
-        <a class="visit git" href="projects/?github&coinages" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
-    </div>
-    <!-- Influxion -->
-    <div class="project-card">
-        <div 
-        style="
-        background-color: #1C1F33;
-        background-image: url(assets/influxion.png);
-        background-size: cover" class="cover-up">
+        <!-- Cloudi -->
+        <div class="project-card">
+            <div 
+            style="
+            background-image: url(assets/cloudi.jpg);
+            " class="cover-up">
             <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
-            <h3 class="ttl-big">Influxion<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+                <h3 class="ttl-big">Cloudi<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Concept</h3>
+            </div>
+            <span class="project-title">Cloudi - Conceptual Design</span>
+            <hr>
+            <p class='desc'>
+                Cloudi is a scalable, multi-platform service that allows you to 
+                create and access a private computer system from anywhere.
+                This website, like HoloTech, was a concept design.
+            </p>
+            <a target="_blank" href="projects/?main&cloudi" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&cloudi" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
         </div>
-        <span class="project-title">Influxion - Repl.it Music Jam</span>
-        <hr>
-        <p class='desc'>
-                Influxion blends the elements of a rhythm game 
-                into a less strict and more approachable platformer game.
-                It was submitted to the Repl.it Music Jam.
-        </p>
-        <a target="_blank" href="projects/?main&influxion" class="visit">View Project</a>
-        <a class="visit git" href="projects/?github&influxion" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        <!-- Notifizer -->
+        <div class="project-card">
+            <div 
+            style="background-image: url(assets/notifizer.png);" class="cover-up">
+                <h3 class="ttl-big">Notifizer<i class="tprnt">|</i><i class="tprnt">|</i>|<i class="tprnt">|</i><i class="tprnt">|</i>Bot</h3>
+                <span class="langs">Node.JS,<i class="tprnt">|</i>HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
+            </div>
+            <span class="project-title">Notifizer - Discord Bot</span>
+            <hr>
+            <p class='desc'>
+                Notifizer is a bot created for the social platform Discord.
+                It allows users to create reminders for themselves and get
+                notified through the Discord app.</p>
+            <a target="_blank" href="projects/?main&notifizer" class="visit">View Project</a>
+        </div>
+        <!-- Escape Oblivion -->
+        <div class="project-card">
+            <div 
+            style="
+
+            background-image: url(assets/escape-oblivion.png);
+            " class="cover-up">
+                <span class="langs">Python3</span>
+                <h3 class="ttl-big">Escape<i style="opacity: 0;">|</i>Oblivion<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+            </div>
+            <span class="project-title">Escape Oblivion - Text Game</span>
+            <hr>
+            <p class='desc'>
+                Escape Oblivion is a short text-adventure game written in 
+                Python3.x. The game won first place in a Python competition.
+                The theme of the game is about escaping a 'haunted house'.
+            </p>
+            <a target="_blank" href="projects/?main&escape" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&escape" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        </div>
+        <!-- Ace Code Day 2019 -->
+        <div class="project-card">
+            <div 
+            style="
+            background-image: url(assets/ace-coding-2019.png);
+            " class="cover-up">
+                <span class="langs">C#,<i class="tprnt">|</i>HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS,<i class="tprnt">|</i>PHP</span>
+                <h3 class="ttl-big">ACE<i style="opacity: 0;">|</i>CODE<i style="opacity: 0;">|</i>DAY<i style="opacity: 0;">|</i>2019<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+            </div>
+            <span class="project-title">Ace Code Day 2019 - Quiz Game</span>
+            <hr>
+            <p class='desc'>
+                This is an game we built for a competition called 
+                Ace Code Day which teaches people how they impact 
+                the environment and how they can reduce their carbon
+                footprint.
+            </p>
+            <a class="visit git" href="projects/?github&acecodeday19" target="_blank"> View Project On Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        </div>
+        <!-- CoinAGES -->
+        <div class="project-card">
+            <div 
+            style="
+            background-image: url(assets/coinages.png);
+            " class="cover-up">
+                <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
+                <h3 class="ttl-big">CoinAGES<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+            </div>
+            <span class="project-title">COINAGES - Repl.it Game Jam</span>
+            <hr>
+            <p class='desc'>
+                    CoinAGES is an online game we built for a global contest, the Repl.It Game Jam. 
+                    The game concept is a cynical view on launching and 
+                    growing a startup in the tech industry.
+            </p>
+            <a target="_blank" href="projects/?main&coinages" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&coinages" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        </div>
+        <!-- Influxion -->
+        <div class="project-card">
+            <div 
+            style="
+            background-image: url(assets/influxion.png);
+            " class="cover-up">
+                <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS</span>
+                <h3 class="ttl-big">Influxion<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>|<i style="opacity: 0;">|</i><i style="opacity: 0;">|</i>Game</h3>
+            </div>
+            <span class="project-title">Influxion - Repl.it Music Jam</span>
+            <hr>
+            <p class='desc'>
+                    Influxion blends the elements of a rhythm game 
+                    into a less strict and more approachable platformer game.
+                    It was submitted to the Repl.it Music Jam.
+            </p>
+            <a target="_blank" href="projects/?main&influxion" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&influxion" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        </div>
+        <!-- Medical.ly -->
+        <div class="project-card">
+            <div 
+            style="
+            background-image: url(assets/medically.png);
+            " class="cover-up">
+                <span class="langs">HTML,<i class="tprnt">|</i>CSS,<i class="tprnt">|</i>JS,<i class="tprnt">|</i>Node.JS</span>
+                <h3 style="  
+                    background: rgba(100, 148, 237, 0.63);
+                    color: white;" class="ttl-big">
+                    medical.ly
+                </h3>
+            </div>
+            <span class="project-title">medical.ly - Expo Hacks II</span>
+            <hr>
+            <p class='desc'>
+                    Medical.ly is a work-in-progress EHR system designed 
+                    to bridge the gap between patients and doctors through
+                    and with a simple, friendly online interface.
+            </p>
+            <a target="_blank" href="projects/?main&medically" class="visit">View Project</a>
+            <a class="visit git" href="projects/?github&medically" target="_blank">Github&nbsp;&nbsp;<i class="fab fa-github"></i></a>
+        </div>
     </div>
+    
     <script src="scripts/portfolio.js"></script>
 </body>
 </html>
