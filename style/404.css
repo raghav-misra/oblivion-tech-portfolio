@@ -12,7 +12,7 @@ span{
     background: white;
     display: inline-block;
     text-align: center;
-    width: 315px;
+    width: 325px;
     height: 325px;
     border-radius: 10px;
     position: absolute;
@@ -20,6 +20,7 @@ span{
     top: calc(50vh - 227.5px);
     left: calc(50vw - 180px);
 }
+
 
 #alert{
     font-family: 'Staatliches', sans-serif;

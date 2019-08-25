@@ -29,7 +29,7 @@ keyframer.revokeEvent = (elementQuery, event) =>{
         );
         delete keyframer.eventTracker[elementQuery]["keyframer-" + event];
     }
-    catch(e){ console.warn("That event was never created!"); }
+    catch(e){ console.warn("That event was never created!", e); }
 };
 
 /* ----------------------------- */

@@ -136,3 +136,15 @@ hr{
 .pg-canvas{
   position:absolute !important;
 }
+
+@keyframes open-title{
+  0%{
+    top: -60px;
+    opacity: 0;
+  }
+
+  100%{
+    top: 12.5px;
+    opacity: 1;
+  }
+}
