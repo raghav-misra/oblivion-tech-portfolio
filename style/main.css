@@ -1,5 +1,5 @@
 /* CSS Imports */
-@import url('https://fonts.googleapis.com/css?family=Staatliches|Barlow:400|IBM+Plex+Mono:300');
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Barlow:400|IBM+Plex+Mono:300+Material+Icons');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 /* Style */
@@ -25,6 +25,10 @@ body, html{
   height: 100%;
   z-index: -1;
   display: block;
+}
+
+.invisible{
+  opacity: 0;
 }
 
 body{

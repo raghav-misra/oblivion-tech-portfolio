@@ -1,0 +1,95 @@
+.half-width{
+    box-sizing: border-box;
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    padding-bottom: 50px;
+    overflow: auto;
+    background: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+}
+
+.half-width.left{
+    left: 0;
+}
+.half-width.right{
+    right: 0;
+    width: 60vw;
+    text-align: center;
+    background: transparent;
+}
+/* Form */
+[css-required]::after{
+    content: " *";
+    color: rgb(241, 38, 38);
+    font-size: 30px;
+}
+
+.form-title{
+    font-size: 40px;
+    margin: 10px;
+}
+
+form{
+    padding: 20px;
+    text-align: left;
+}
+
+.input-title{
+    font-size: 25px;
+}
+
+input.text-input, select, textarea{
+    resize: vertical;
+    box-sizing: content-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px transparent solid;
+    border-bottom: 2px #003366 solid;
+    width: 60%;
+    background: rgb(191, 246, 255);
+    transition: border-color 500ms ease-in-out, border-radius 500ms, background 250ms;
+}
+
+textarea{
+    height: 100px;
+    position: relative;
+}
+
+input.text-input:hover, input.text-input:focus, select:hover, select:focus, textarea:focus, textarea:hover{
+    border-color: #003366;
+}
+
+input.text-input:focus, select:focus, textarea:focus, .submit:hover{
+    border-radius: 15px;
+    background: white;
+}
+
+.submit{
+    background: rgb(191, 246, 255);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 15px;
+    border: 2px #003366 solid;
+    margin-bottom: 15px;
+    transition: border-color 500ms ease-in-out, border-radius 500ms, background 250ms;
+}
+
+
+
+
+/* Responsive Stuffs */
+@media only screen and (max-width: 750px){
+    .half-width.right{ display: none; }
+    .half-width.left{ width: 100vw; }
+}

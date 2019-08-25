@@ -30,6 +30,9 @@
   #hide-typed{
     display: block;
   }
+  #show-typed{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 380px){

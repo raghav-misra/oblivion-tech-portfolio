@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" style="background: none">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/main.css"/>
-    <title>Oblivion Solutions</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="style/main.css" rel="stylesheet">
+	<link href="style/pages/contact.css" rel="stylesheet">
+	<title>Oblivion Solutions</title>
 </head>
-<body style="background-color:transparent" id="frame-body">
-    <div class="small-header">
-        <span class="title">Get In Touch</span>
-    </div>
+<body id="frame-body" style="background-color:transparent">
+	<div class="half-width right"></div>
+	<div class="half-width left">
+        <h1 class="form-title">Get In Touch</h1>
+        <hr>
+		<form action="javascript:alert('xd')" data-netlify-recaptcha="true" name="contact" method="POST" data-netlify="true" netlify>
+			<div class="form-group">
+				<h4 class="input-title" css-required>First Name:</h4>
+				<input type="text" class="text-input" name="firstname" required>
+			</div>
+			<hr class="invisible">
+			<div class="form-group">
+				<h4 class="input-title" css-required>Last Name:</h4>
+				<input type="text" class="text-input" name="lastname" required>
+			</div>
+			<hr class="invisible">
+			<div class="form-group">
+				<h4 class="input-title" css-required>Email Address:</h4>
+				<input type="email" class="text-input" name="email" required>
+			</div>
+			<hr class="invisible">
+			<div class="form-group">
+				<h4 class="input-title" css-required>Subject:</h4>
+				<select name="subject">
+					<option value="greeting" selected>Say Hi!</option>
+					<option value="request">Get A Quote.</option>
+					<option value="moreinfo">More Information.</option>
+					<option value="other">Other.</option>
+				</select>
+			</div>
+			<hr class="invisible">
+			<div class="form-group">
+				<h4 class="input-title" css-required>Message Body:</h4>
+				<textarea name="body" required></textarea>
+			</div>
+			<hr class="invisible">
+			<div class="form-group">
+				<h4 class="input-title" css-required>Verification:</h4>
+				<div data-netlify-recaptcha="true"></div>
+			</div>
+			<button type="submit" class="submit">Submit</button>
+        </form>
+	</div>
 </body>
 </html>
