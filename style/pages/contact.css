@@ -45,6 +45,10 @@ form{
     font-size: 25px;
 }
 
+div[data-netlify-recaptcha]{
+    transform: scale(0.75);
+}
+
 input.text-input, select, textarea{
     resize: vertical;
     box-sizing: content-box;
