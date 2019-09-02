@@ -45,14 +45,15 @@ function escapeMenu(keyString){
 /* Iframe Navigation */
 var navFrame = document.getElementById("navigation");
 
-function goToPage(locationX){
+function goToPage(locationX, frameTitle){
     navFrame.src = locationX + ".html";
+    navFrame.title = frameTitle;
     closeMenu();
     location.href = "#" + locationX;
 }
 
 document.getElementById("home-tab").addEventListener("click", function(){
-    goToPage("Homepage", "This is the homepage.");
+    goToPage("homepage", "This is the homepage.");
 });
 
 document.getElementById("about-tab").addEventListener("click", function(){
@@ -64,23 +65,23 @@ document.getElementById("portfolio-tab").addEventListener("click", function(){
 });
 
 document.getElementById("contact-tab").addEventListener("click", function(){
-    goToPage("contact", );
+    goToPage("contact", "Get in touch!");
 });
 
 document.getElementById("home-tab-mobile").addEventListener("click", function(){
-    goToPage("homepage");
+    goToPage("homepage", "This is the homepage.");
 });
 
 document.getElementById("about-tab-mobile").addEventListener("click", function(){
-    goToPage("about");
+    goToPage("about", "Meet the team.");
 });
 
 document.getElementById("portfolio-tab-mobile").addEventListener("click", function(){
-    goToPage("portfolio");
+    goToPage("portfolio", "Check out our projects.");
 });
 
 document.getElementById("contact-tab-mobile").addEventListener("click", function(){
-    goToPage("contact");
+    goToPage("contact", "Get in touch!");
 });
 
 if(!!~location.href.indexOf("#")){
