@@ -52,19 +52,19 @@ function goToPage(locationX){
 }
 
 document.getElementById("home-tab").addEventListener("click", function(){
-    goToPage("homepage");
+    goToPage("Homepage", "This is the homepage.");
 });
 
 document.getElementById("about-tab").addEventListener("click", function(){
-    goToPage("about");
+    goToPage("about", "Meet the team.");
 });
 
 document.getElementById("portfolio-tab").addEventListener("click", function(){
-    goToPage("portfolio");
+    goToPage("portfolio", "Check out our projects.");
 });
 
 document.getElementById("contact-tab").addEventListener("click", function(){
-    goToPage("contact");
+    goToPage("contact", );
 });
 
 document.getElementById("home-tab-mobile").addEventListener("click", function(){
