@@ -11,6 +11,3 @@ coverArr.forEach(function(el){
   }
 });
 
-// 'Dynamic Project Card Builder
-
-

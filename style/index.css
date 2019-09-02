@@ -1,3 +1,5 @@
+@import url("main.css");
+
 /* Show Mobile/Tablet Menu */
 @media only screen and (max-width: 900px){
   #menu-open{
