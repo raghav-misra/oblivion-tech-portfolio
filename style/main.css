@@ -56,6 +56,18 @@ hr{
   display: table;
 }
 
+.under-construction{
+  background: url("../assets/construction.gif");
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  width: 398px;
+  height: 49px;
+}
+
 /* Animations */
 @keyframes fade-in{
   from{ opacity: 0; }
