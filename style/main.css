@@ -65,6 +65,7 @@ hr{
   background-position-y: center;
   background-size: cover;
   width: 398px;
+  z-index: 500;
   height: 49px;
 }
 
